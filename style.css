@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  padding: 24px;
+}
+
+.nav-p-1 {
+  display: flex;
+}
+
+.dropdown-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  margin-left: 40px;
+}
+
+.dropdown {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.arrow-down {
+  height: 10px;
+}
+
+.company-logo {
+  height: 32px;
+}
