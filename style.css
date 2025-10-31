@@ -1,19 +1,60 @@
+@font-face {
+  font-family: "Epilogue";
+  src: url("./fonts/Epilogue-VariableFont_wght.ttf");
+}
+
 * {
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
 }
 
+body {
+  font-family: "Epilogue", sans-serif;
+  background-color: hsl(0, 0%, 98%);
+}
+
 nav {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   width: 100%;
-  padding: 24px;
+  padding: 24px 40px;
+  color: hsl(0, 0%, 41%);
+}
+
+a {
+  text-decoration: none;
+  color: hsl(0, 0%, 41%);
+}
+
+a:hover {
+  color: hsl(0, 0%, 8%);
 }
 
 .nav-p-1 {
   display: flex;
+  align-items: center;
+}
+
+.nav-p-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 42px;
+}
+
+.register-btn {
+  padding: 10px 15px;
+  border-radius: 12px;
+  border: 1px solid hsl(0, 0%, 41%);
+  background-color: hsl(0, 0%, 98%);
+  color: hsl(0, 0%, 41%);
+}
+
+.register-btn:hover {
+  color: hsl(0, 0%, 8%);
+  border-color: hsl(0, 0%, 8%);
 }
 
 .dropdown-container {
@@ -30,11 +71,12 @@ nav {
 }
 
 .arrow-down {
-  height: 10px;
+  height: 6px;
 }
 
 .company-logo {
   height: 32px;
+  margin-top: 10px;
 }
 
 .hero {
@@ -46,6 +88,7 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: end;
+  margin-left: 24px;
   width: 450px;
 }
 
@@ -61,20 +104,29 @@ nav {
 }
 
 .hero-heading {
-  font-size: 80px;
+  color: hsl(0, 0%, 8%);
+  font-size: 68px;
   margin-bottom: 40px;
 }
 
 .hero-para {
-  font-size: 22px;
+  color: hsl(0, 0%, 41%);
+  font-size: 18px;
+  line-height: 25px;
   margin-bottom: 40px;
 }
 
 .learn-more {
   width: 100px;
-  padding: 8px 5px;
+  padding: 12px 15px;
   background-color: hsl(0, 0%, 8%);
   color: hsl(0, 0%, 98%);
   border: none;
-  border-radius: 7px;
+  border-radius: 10px;
+}
+
+.learn-more:hover {
+  background-color: hsl(0, 0%, 98%);
+  border: 1px solid hsl(0, 0%, 8%);
+  color: hsl(0, 0%, 8%);
 }
