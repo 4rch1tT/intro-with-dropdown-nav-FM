@@ -18,54 +18,23 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  padding: 24px 40px;
-  color: hsl(0, 0%, 41%);
+  padding: 5px 10px;
 }
 
 a {
-  text-decoration: none;
-  color: hsl(0, 0%, 41%);
-}
-
-a:hover {
-  color: hsl(0, 0%, 8%);
-}
-
-.nav-p-1 {
-  display: flex;
-  align-items: center;
-}
-
-.nav-p-2 {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 42px;
-}
-
-.ham-menu {
   display: none;
 }
 
-.register-btn {
-  padding: 10px 15px;
-  border-radius: 12px;
-  border: 1px solid hsl(0, 0%, 41%);
-  background-color: hsl(0, 0%, 98%);
-  color: hsl(0, 0%, 41%);
+.ham-menu {
+  display: block;
 }
 
-.register-btn:hover {
-  color: hsl(0, 0%, 8%);
-  border-color: hsl(0, 0%, 8%);
+.register-btn {
+  display: none;
 }
 
 .dropdown-container {
-  display: flex;
-  align-items: flex-start;
-  gap: 24px;
-  margin-left: 40px;
+  display: none;
 }
 
 .dropdown {
@@ -85,44 +54,56 @@ a:hover {
 
 .hero {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column-reverse;
+  gap: 32px;
+  width: 100%;
 }
 
 .hero-p-1 {
   display: flex;
   flex-direction: column;
-  justify-content: end;
-  margin-left: 24px;
-  width: 450px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
 }
 
 .hero-image-desktop {
-  height: 550px;
+  display: none;
 }
 
 .hero-image-mobile {
-  display: none;
+  display: block;
+  width: 100%;
 }
 
 .client-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+  max-width: 500px;
   margin-top: 80px;
 }
 
+.client-container img {
+  width: 80px;
+}
+
 .hero-heading {
+  text-align: center;
   color: hsl(0, 0%, 8%);
-  font-size: 68px;
+  font-size: 40px;
   font-weight: 700;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .hero-para {
+  text-align: center;
   color: hsl(0, 0%, 41%);
-  font-size: 18px;
+  font-size: 14px;
   line-height: 25px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .learn-more {
@@ -140,7 +121,7 @@ a:hover {
   color: hsl(0, 0%, 8%);
 }
 
-@media screen and (min-width: 320px) {
+/* @media screen and (min-width: 320px) {
   a {
     display: none;
   }
@@ -173,7 +154,7 @@ a:hover {
     width: 100%;
     max-width: 450px;
   }
-}
+} */
 
 /* @media screen and (min-width: 375px) {
 }
@@ -248,25 +229,89 @@ a:hover {
 } */
 
 @media screen and (min-width: 768px) {
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 24px 40px;
+    color: hsl(0, 0%, 41%);
+  }
+
   a {
     display: block;
+    text-decoration: none;
+    color: hsl(0, 0%, 41%);
   }
 
-  .dropdown {
-    display: block;
+  a:hover {
+    color: hsl(0, 0%, 8%);
   }
 
-  .register-btn {
-    display: block;
+  .nav-p-1 {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-p-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 42px;
   }
 
   .ham-menu {
     display: none;
   }
 
+  .register-btn {
+    display: block;
+    padding: 10px 15px;
+    border-radius: 12px;
+    border: 1px solid hsl(0, 0%, 41%);
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(0, 0%, 41%);
+  }
+
+  .register-btn:hover {
+    color: hsl(0, 0%, 8%);
+    border-color: hsl(0, 0%, 8%);
+  }
+
+  .dropdown-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+    margin-left: 40px;
+  }
+
+  .dropdown {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .arrow-down {
+    height: 6px;
+  }
+
+  .company-logo {
+    height: 32px;
+    margin-top: 10px;
+  }
+
   .hero {
+    display: flex;
     flex-direction: row;
     justify-content: space-around;
+  }
+
+  .hero-p-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin-left: 24px;
+    width: 450px;
   }
 
   .hero-image-desktop {
@@ -276,5 +321,41 @@ a:hover {
 
   .hero-image-mobile {
     display: none;
+  }
+
+  .client-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 80px;
+  }
+
+  .hero-heading {
+    color: hsl(0, 0%, 8%);
+    font-size: 68px;
+    font-weight: 700;
+    margin-bottom: 40px;
+  }
+
+  .hero-para {
+    color: hsl(0, 0%, 41%);
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 40px;
+  }
+
+  .learn-more {
+    width: 100px;
+    padding: 12px 15px;
+    background-color: hsl(0, 0%, 8%);
+    color: hsl(0, 0%, 98%);
+    border: none;
+    border-radius: 10px;
+  }
+
+  .learn-more:hover {
+    background-color: hsl(0, 0%, 98%);
+    border: 1px solid hsl(0, 0%, 8%);
+    color: hsl(0, 0%, 8%);
   }
 }
