@@ -65,7 +65,7 @@ a {
   justify-content: center;
   align-items: center;
   width: 100%;
-  max-width: 600px;
+  max-width: auto;
 }
 
 .hero-image-desktop {
@@ -75,19 +75,23 @@ a {
 .hero-image-mobile {
   display: block;
   width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 .client-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  max-width: 500px;
-  margin-top: 80px;
+  box-sizing: border-box;
+  padding: 0 1rem;
+  width: 100vw;
+  max-width: 100%;
+  margin-top: 40px;
 }
 
 .client-container img {
-  width: 80px;
+  width: 65px;
 }
 
 .hero-heading {
@@ -101,13 +105,14 @@ a {
 .hero-para {
   text-align: center;
   color: hsl(0, 0%, 41%);
-  font-size: 14px;
+  font-size: 18px;
   line-height: 25px;
   margin-bottom: 20px;
 }
 
 .learn-more {
-  width: 100px;
+  width: 120px;
+  font-weight: 700;
   padding: 12px 15px;
   background-color: hsl(0, 0%, 8%);
   color: hsl(0, 0%, 98%);
@@ -120,113 +125,6 @@ a {
   border: 1px solid hsl(0, 0%, 8%);
   color: hsl(0, 0%, 8%);
 }
-
-/* @media screen and (min-width: 320px) {
-  a {
-    display: none;
-  }
-  .dropdown {
-    display: none;
-  }
-
-  .register-btn {
-    display: none;
-  }
-
-  .ham-menu {
-    display: block;
-  }
-
-  .hero {
-    display: flex;
-    flex-direction: column-reverse;
-    padding: 5px;
-    gap: 24px;
-    align-items: center;
-  }
-
-  .hero-image-desktop {
-    display: none;
-  }
-
-  .hero-image-mobile {
-    display: block;
-    width: 100%;
-    max-width: 450px;
-  }
-} */
-
-/* @media screen and (min-width: 375px) {
-}
-
-@media screen and (min-width: 425px) {
-} */
-/*
-@media screen and (max-width: 768px) {
-  a {
-    display: none;
-  }
-  .dropdown {
-    display: none;
-  }
-
-  .register-btn {
-    display: none;
-  }
-
-  .ham-menu {
-    display: block;
-  }
-
-  .hero {
-    display: flex;
-    flex-direction: column-reverse;
-    padding: 5px;
-    gap: 24px;
-    align-items: center;
-  }
-
-  .hero-p-1 {
-    align-items: center;
-    padding: 24px 0px;
-    width: 450px;
-    margin: 0px;
-  }
-
-  .hero-p-2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .hero-image-desktop {
-    display: none;
-  }
-
-  .hero-image-mobile {
-    display: block;
-    width: 100%;
-    max-width: 450px;
-  }
-
-  .hero-heading {
-    font-size: 40px;
-  }
-
-  .hero-para {
-    text-align: center;
-  }
-
-  .learn-more {
-    width: 120px;
-  }
-
-  .client-container {
-    margin-top: 40px;
-    align-items: center;
-    gap: 16px;
-  }
-} */
 
 @media screen and (min-width: 768px) {
   nav {
@@ -301,6 +199,7 @@ a {
   }
 
   .hero {
+    width: 100vw;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -309,9 +208,10 @@ a {
   .hero-p-1 {
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content: center;
+    align-items: normal;
     margin-left: 24px;
-    width: 450px;
+    width: 320px;
   }
 
   .hero-image-desktop {
@@ -328,24 +228,31 @@ a {
     justify-content: space-between;
     align-items: center;
     margin-top: 80px;
+    padding: 0;
+  }
+
+  .client-container img {
+    width: 80px;
   }
 
   .hero-heading {
+    text-align: start;
     color: hsl(0, 0%, 8%);
-    font-size: 68px;
+    font-size: 43px;
     font-weight: 700;
     margin-bottom: 40px;
   }
 
   .hero-para {
+    text-align: start;
     color: hsl(0, 0%, 41%);
-    font-size: 18px;
+    font-size: 15px;
     line-height: 25px;
     margin-bottom: 40px;
   }
 
   .learn-more {
-    width: 100px;
+    width: 120px;
     padding: 12px 15px;
     background-color: hsl(0, 0%, 8%);
     color: hsl(0, 0%, 98%);
@@ -357,5 +264,32 @@ a {
     background-color: hsl(0, 0%, 98%);
     border: 1px solid hsl(0, 0%, 8%);
     color: hsl(0, 0%, 8%);
+  }
+}
+
+@media screen and (min-width: 925px) {
+  .hero-p-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: normal;
+    margin-left: 24px;
+    width: 450px;
+  }
+
+  .hero-heading {
+    text-align: start;
+    color: hsl(0, 0%, 8%);
+    font-size: 68px;
+    font-weight: 700;
+    margin-bottom: 40px;
+  }
+
+  .hero-para {
+    text-align: start;
+    color: hsl(0, 0%, 41%);
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 40px;
   }
 }
