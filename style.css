@@ -198,11 +198,52 @@ a {
     margin-top: 10px;
   }
 
+  .features-dd {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    top: 75px;
+    left: 120px;
+    border: 1px solid black;
+    padding: 18px;
+    border-radius: 5px;
+    background-color: white;
+  }
+
+  .features-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .features-link:hover {
+    color: black;
+  }
+
+  .company-dd {
+    position: absolute;
+    top: 75px;
+    left: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    border: 1px solid black;
+    padding: 18px;
+    border-radius: 5px;
+    background-color: white;
+  }
+
+  .company-link:hover {
+    color: black;
+  }
+
   .hero {
     width: 100vw;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin-top: 24px;
   }
 
   .hero-p-1 {
