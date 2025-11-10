@@ -189,6 +189,11 @@ a {
     gap: 5px;
   }
 
+  .dropdown:hover {
+    cursor: pointer;
+    color: black;
+  }
+
   .arrow-down {
     height: 6px;
   }
@@ -200,15 +205,18 @@ a {
 
   .features-dd {
     position: absolute;
-    display: flex;
+    display: none;
     flex-direction: column;
     gap: 12px;
     top: 75px;
     left: 120px;
-    border: 1px solid black;
     padding: 18px;
     border-radius: 5px;
     background-color: white;
+  }
+
+  .features-dd:hover{
+    cursor: pointer;
   }
 
   .features-link {
@@ -225,13 +233,16 @@ a {
     position: absolute;
     top: 75px;
     left: 300px;
-    display: flex;
+    display: none;
     flex-direction: column;
     gap: 14px;
-    border: 1px solid black;
     padding: 18px;
     border-radius: 5px;
     background-color: white;
+  }
+
+  .company-dd:hover{
+    cursor: pointer;
   }
 
   .company-link:hover {
