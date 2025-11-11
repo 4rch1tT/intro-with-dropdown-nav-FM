@@ -21,12 +21,43 @@ nav {
   padding: 5px 10px;
 }
 
-a {
+.redirect-link {
   display: none;
 }
 
 .ham-menu {
   display: block;
+}
+
+.close-menu {
+  width: 30px;
+  position: absolute;
+  right: 15px;
+}
+
+.side-menu {
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(0, 0%, 98%);
+  padding: 15px;
+}
+
+.sb-items {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 50px;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .register-btn {
@@ -50,6 +81,14 @@ a {
 .company-logo {
   height: 32px;
   margin-top: 10px;
+}
+
+.features-dd {
+  display: none;
+}
+
+.company-dd {
+  display: none;
 }
 
 .hero {
@@ -162,6 +201,10 @@ a {
     display: none;
   }
 
+  .side-menu {
+    display: none;
+  }
+
   .register-btn {
     display: block;
     padding: 10px 15px;
@@ -213,9 +256,10 @@ a {
     padding: 18px;
     border-radius: 5px;
     background-color: white;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2), 0px 4px 6px rgba(0, 0, 0, 0.1);
   }
 
-  .features-dd:hover{
+  .features-dd:hover {
     cursor: pointer;
   }
 
@@ -239,9 +283,10 @@ a {
     padding: 18px;
     border-radius: 5px;
     background-color: white;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2), 0px 4px 6px rgba(0, 0, 0, 0.1);
   }
 
-  .company-dd:hover{
+  .company-dd:hover {
     cursor: pointer;
   }
 
