@@ -21,6 +21,19 @@ nav {
   padding: 5px 10px;
 }
 
+a {
+  text-decoration: none;
+  color: hsl(0, 0%, 41%);
+}
+
+a:hover {
+  color: black;
+}
+
+#login-link {
+  display: none;
+}
+
 .redirect-link {
   display: none;
 }
@@ -30,7 +43,7 @@ nav {
 }
 
 .close-menu {
-  width: 30px;
+  width: 28px;
   position: absolute;
   right: 15px;
 }
@@ -41,10 +54,11 @@ nav {
   top: 0;
   height: 100vh;
   width: 50%;
-  display: flex;
+  display: none;
   flex-direction: column;
   background-color: hsl(0, 0%, 98%);
   padding: 15px;
+  color: hsl(0, 0%, 41%);
 }
 
 .sb-items {
@@ -54,10 +68,57 @@ nav {
   margin-top: 50px;
 }
 
+.features-dd-mobile {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+  padding: 14px 16px;
+}
+
+.features-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.features-link:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.company-dd-mobile {
+  display: none;
+  flex-direction: column;
+  gap: 12px;
+  padding: 14px 16px;
+}
+
+.company-dd-mobile p:hover {
+  color: black;
+  cursor: pointer;
+}
+
 .login-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.register-btn-mobile {
+  padding: 8px 80px;
+  border-radius: 12px;
+  border: 2px solid hsl(0, 0%, 41%);
+  background-color: hsl(0, 0%, 98%);
+  color: hsl(0, 0%, 41%);
+  font-size: medium;
+}
+
+.register-btn-mobile:hover {
+  color: black;
+  border-color: black;
 }
 
 .register-btn {
@@ -72,6 +133,11 @@ nav {
   display: flex;
   align-items: center;
   gap: 5px;
+}
+
+.dropdown:hover {
+  color: black;
+  cursor: pointer;
 }
 
 .arrow-down {
@@ -185,6 +251,10 @@ nav {
     color: hsl(0, 0%, 8%);
   }
 
+  #login-link {
+    display: block;
+  }
+
   .nav-p-1 {
     display: flex;
     align-items: center;
@@ -201,15 +271,11 @@ nav {
     display: none;
   }
 
-  .side-menu {
-    display: none;
-  }
-
   .register-btn {
     display: block;
     padding: 10px 15px;
     border-radius: 12px;
-    border: 1px solid hsl(0, 0%, 41%);
+    border: 2px solid hsl(0, 0%, 41%);
     background-color: hsl(0, 0%, 98%);
     color: hsl(0, 0%, 41%);
   }
@@ -248,7 +314,6 @@ nav {
 
   .features-dd {
     position: absolute;
-    display: none;
     flex-direction: column;
     gap: 12px;
     top: 75px;
@@ -277,7 +342,6 @@ nav {
     position: absolute;
     top: 75px;
     left: 300px;
-    display: none;
     flex-direction: column;
     gap: 14px;
     padding: 18px;
